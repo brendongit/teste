@@ -3,13 +3,15 @@ import LottieView from 'lottie-react-native';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
 const Scan = ({ navigation }) => {
+  navigation.setOptions({
+    title: 'Escanear',
+    headerShown: true,
+    headerTransparent: true,
+  });
   return ( 
     <>
-    <Text style={styles.text}>Testando - Scan </Text>
     <View style={styles.container}>
-      <LottieView
-        autoPlay
-        source={require('../../../assets/json/scan.json')} />
+    <Text style={styles.text}>Testando - Scan </Text>
     </View><Button title="Go back" onPress={() => navigation.goBack()} /></>
    );
 }
