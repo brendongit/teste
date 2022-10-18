@@ -14,9 +14,7 @@ export default function App() {
           name="Home"
           component={Home}
           options={{
-            title: "",
-            headerTitleAlign: "center",
-            headerShown: true,
+            headerShown: false,
             headerTransparent: true,
           }}
         />
@@ -24,9 +22,7 @@ export default function App() {
           name="Scan"
           component={Scan}
           options={{
-            title: "Escanear",
-            headerTitleAlign: "center",
-            headerShown: true,
+            headerShown: false,
             headerTransparent: true,
           }}
         />
