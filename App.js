@@ -10,8 +10,26 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName={Home}>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Scan" component={Scan} />
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{
+            title: "",
+            headerTitleAlign: "center",
+            headerShown: true,
+            headerTransparent: true,
+          }}
+        />
+        <Stack.Screen
+          name="Scan"
+          component={Scan}
+          options={{
+            title: "Escanear",
+            headerTitleAlign: "center",
+            headerShown: true,
+            headerTransparent: true,
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

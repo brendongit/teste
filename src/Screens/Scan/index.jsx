@@ -1,13 +1,7 @@
 import React from 'react';
-import LottieView from 'lottie-react-native';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
 const Scan = ({ navigation }) => {
-  navigation.setOptions({
-    title: 'Escanear',
-    headerShown: true,
-    headerTransparent: true,
-  });
   return ( 
     <>
     <View style={styles.container}>

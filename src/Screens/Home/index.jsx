@@ -1,13 +1,7 @@
 import React from 'react';
-import LottieView from 'lottie-react-native';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
 const Home = ({ navigation }) => {
-  navigation.setOptions({
-    title: '',
-    headerShown: true,
-    headerTransparent: true,
-  });
   return ( 
     <><View style={styles.container}>
       <Text style={styles.text}>Testando - Home </Text>
