@@ -21,7 +21,9 @@ const Scan = ({ navigation }) => {
             />
           }
         />
-        <Text style={styles.text}>Testando - Scan </Text>
+        <View style={styles.content}>
+          <Text style={styles.text}>Testando - Scan </Text>
+        </View>
       </View>
       <Button title="Go back" onPress={() => navigation.goBack()} />
     </>
@@ -42,4 +44,9 @@ const styles = StyleSheet.create({
     color: "#fff",
     textAlign: "center",
   },
+  content: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
 });
