@@ -42,11 +42,6 @@ const styles = StyleSheet.create({
     color: "#fff",
     textAlign: "center",
   },
-  textButton: {
-    color: "#fff",
-    fontWeight: "bold",
-    fontSize: 20,
-  },
   circleBackground: {
     width: "100%",
     position: "absolute",
@@ -56,6 +51,11 @@ const styles = StyleSheet.create({
     width: 160,
     height: 160,
     marginTop: 50,
+  },
+  textButton: {
+    color: "#fff",
+    fontWeight: "bold",
+    fontSize: 20,
   },
   containerButtons: {
     alignItems: "center",
