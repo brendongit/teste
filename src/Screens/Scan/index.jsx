@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import Constants from "expo-constants";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import Header from "../../Components/Header";
@@ -22,7 +22,15 @@ const Scan = ({ navigation }) => {
           }
         />
         <View style={styles.content}>
-          <Text style={styles.text}>Testando - Scan </Text>
+          <TouchableOpacity style={{alignItems: 'center'}}>
+            <MaterialCommunityIcons
+              name="barcode-scan"
+              size={100}
+              color="#fff"
+              style={{ marginRight: 12 }}
+            />
+            <Text style={styles.text}>Clique para escanear</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </>
