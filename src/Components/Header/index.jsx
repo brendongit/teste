@@ -1,8 +1,6 @@
 import React from "react";
-import { View, Text } from "react-native";
-import { Feather, MaterialIcons } from "@expo/vector-icons";
-
-import styles from "./styles"
+import { View, Text, StyleSheet } from "react-native";
+import { MaterialIcons } from "@expo/vector-icons";
 
 export default function Header({ navigation, title = "", icon }) {
   return (
@@ -23,3 +21,34 @@ export default function Header({ navigation, title = "", icon }) {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  content: {
+    height: 70,
+    width: "100%",
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    display: "flex",
+  },
+
+  textContent: {
+    width: "100%",
+    position: "absolute",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "row",
+  },
+
+  text: {
+    color: "#fff",
+    fontSize: 20,
+    fontWeight: "bold",
+  },
+
+  icon: {
+    width: 60,
+    left: 10,
+  },
+});

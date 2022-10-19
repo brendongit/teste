@@ -1,20 +1,20 @@
 import React from "react";
-import { Button, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import Constants from "expo-constants";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { AntDesign } from '@expo/vector-icons'; 
 import Header from "../../Components/Header";
 
-const Scan = ({ navigation }) => {
+const GenerateNote = ({ navigation }) => {
   return (
     <>
       <View style={styles.container}>
         <Header
           style={styles.component}
-          title="Escanear"
+          title="Notas"
           navigation={navigation}
           icon={
-            <MaterialCommunityIcons
-              name="barcode-scan"
+            <AntDesign
+              name="filetext1"
               size={24}
               color="#fff"
               style={{ marginRight: 12 }}
@@ -22,14 +22,14 @@ const Scan = ({ navigation }) => {
           }
         />
         <View style={styles.content}>
-          <Text style={styles.text}>Testando - Scan </Text>
+          <Text style={styles.text}>Testando - Notas </Text>
         </View>
       </View>
     </>
   );
 };
 
-export default Scan;
+export default GenerateNote;
 
 const styles = StyleSheet.create({
   container: {
