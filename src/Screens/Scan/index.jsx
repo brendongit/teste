@@ -57,9 +57,9 @@ export default function Scan({ navigation }) {
             <Text style={styles.text}>Clique para escanear</Text>
           </TouchableOpacity>
           {scanned &&  <BarCodeScanner
-              onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
+              onBarCodeScanned={scanned ? handleBarCodeScanned : undefined }
               style={StyleSheet.absoluteFillObject}
-              />}
+              />}  
         </View>
       </View>
     </>
